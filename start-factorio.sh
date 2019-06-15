@@ -17,6 +17,6 @@ jq "$JQ_FILTER" data/server-settings.example.json > data/server-settings.json
 
 exec $BIN \
   --start-server-load-latest \
-  --server-settings /factorio/data/server-settings.json
+  --server-settings /factorio/data/server-settings.json \
   --bind "${IP_ALLOC}" \
   --no-log-rotation
